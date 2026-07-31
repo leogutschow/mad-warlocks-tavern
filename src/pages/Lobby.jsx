@@ -43,7 +43,7 @@ export default function Lobby({user,navigate}){
     React.createElement('header',{style:header},
       React.createElement('div',{style:{maxWidth:1200,margin:'0 auto',display:'flex',justifyContent:'space-between',alignItems:'center'}},
         React.createElement('div',null,
-          React.createElement('h1',{style:{color:'#d4891a',fontSize:'2rem',fontFamily:'Georgia,serif',margin:0}},'🍺 MAD WARLOCK'S TAVERN'),
+          React.createElement('h1',{style:{color:'#d4891a',fontSize:'2rem',fontFamily:'Georgia,serif',margin:0}},"🍺 MAD WARLOCK'S TAVERN"),
           React.createElement('p',{style:{color:'#8b4f0f',margin:'5px 0 0 0'}},'Bem-vindo, '+(user?.user_metadata?.username||'Aventureiro')+'!')
         ),
         React.createElement('button',{onClick:async()=>{await signOut();window.location.reload()},style:{padding:'10px 20px',background:'#4a2508',color:'#fdf8f0',border:'1px solid #8b4f0f',borderRadius:5,cursor:'pointer'}},'Sair')
