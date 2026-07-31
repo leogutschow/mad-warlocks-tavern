@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Georgia',serif;background:#1a0c03;color:#fdf8f0}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#2d1605}
+::-webkit-scrollbar-thumb{background:#8b4f0f;border-radius:4px}
