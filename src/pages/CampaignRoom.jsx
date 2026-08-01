@@ -41,6 +41,7 @@ export default function CampaignRoom({user,navigate,campaignId}){
           React.createElement('p',{style:{color:'#8b4f0f',margin:'5px 0 0 0'}},chars.length+' aventureiros')
         ),
         React.createElement('div',{style:{display:'flex',gap:10}},
+          React.createElement('button',{onClick:()=>navigate('lobby'),style:{padding:'10px 20px',background:'#4a2508',color:'#fdf8f0',border:'1px solid #8b4f0f',borderRadius:5,cursor:'pointer',fontFamily:'Georgia,serif'}},'🏠 Lobby'),
           !mc&&React.createElement('button',{onClick:()=>navigate('create-character',{campaignId}),style:{padding:'10px 20px',background:'#8b4f0f',color:'#fdf8f0',border:'none',borderRadius:5,cursor:'pointer'}},'Criar Personagem'),
           mc&&React.createElement('button',{onClick:()=>navigate('character-sheet',{characterId:mc.id,campaignId}),style:{padding:'10px 20px',background:'#4a2508',color:'#fdf8f0',border:'1px solid #8b4f0f',borderRadius:5,cursor:'pointer'}},'Minha Ficha')
         )
