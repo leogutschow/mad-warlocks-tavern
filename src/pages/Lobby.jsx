@@ -111,6 +111,10 @@ export default function Lobby({user,navigate}){
         React.createElement('button',{onClick:async()=>{await signOut();window.location.reload()},style:{padding:'10px 20px',background:'#4a2508',color:'#fdf8f0',border:'1px solid #8b4f0f',borderRadius:5,cursor:'pointer'}},'Sair')
       )
     ),
+    React.createElement('button',{
+    onClick:()=>navigate('standalone-character'),
+    style:{padding:'10px 20px',background:'#8b4f0f',color:'#fdf8f0',border:'none',borderBottom:'3px solid #4a2508',borderRadius:8,cursor:'pointer',fontFamily:'Georgia,serif',fontSize:14}
+  },'📝 Criar Personagem Independente'),
     React.createElement('main',{style:main},
       React.createElement('div',{style:{display:'grid',gridTemplateColumns:'1fr 1fr',gap:20,marginBottom:30}},
         React.createElement('button',{onClick:()=>{setShowCreate(!showCreate);setShowJoin(false)},style:{...card,textAlign:'left',cursor:'pointer',background:showCreate?'#4a2508':'#2d1605',border:showCreate?'3px solid #d4891a':'2px solid #4a2508'}},

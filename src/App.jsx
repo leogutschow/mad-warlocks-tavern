@@ -5,6 +5,7 @@ import Lobby from'./pages/Lobby'
 import CharacterCreation from'./pages/CharacterCreation'
 import CharacterSheet from'./pages/CharacterSheet'
 import CampaignRoom from'./pages/CampaignRoom'
+import StandaloneCharacter from './pages/StandaloneCharacter'
 
 export default function App(){
   const[user,setUser]=useState(null)
@@ -26,6 +27,7 @@ export default function App(){
     page==='lobby'&&React.createElement(Lobby,{user,navigate:nav}),
     page==='create-character'&&React.createElement(CharacterCreation,{user,navigate:nav,campaignId:params.campaignId}),
     page==='character-sheet'&&React.createElement(CharacterSheet,{user,navigate:nav,characterId:params.characterId,campaignId:params.campaignId}),
-    page==='campaign'&&React.createElement(CampaignRoom,{user,navigate:nav,campaignId:params.campaignId})
+    page==='campaign'&&React.createElement(CampaignRoom,{user,navigate:nav,campaignId:params.campaignId}),
+    page==='standalone-character'&&React.createElement(StandaloneCharacter,{user,navigate:nav}),
   )
 }
